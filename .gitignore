@@ -3,3 +3,5 @@ EXT/
 *.html
 *.js
 *.css
+.idea
+/.idea
