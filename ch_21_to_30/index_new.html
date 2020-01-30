@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 21 to 30 (2)</title>
+</head>
+<body>
+<script>
+    let userInput = prompt("Write some words to capitalize"),
+        splitUserInput = userInput.split(" "),
+        sentence = "";
+
+    for (let i = 0; i < splitUserInput.length; i++)
+        sentence += splitUserInput[i].charAt(0).toUpperCase() + splitUserInput[i].slice(1).toLowerCase() + " ";
+
+    alert(sentence);
+</script>
+</body>
+</html>

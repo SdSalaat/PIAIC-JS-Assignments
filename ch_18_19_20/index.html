@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 18, 19 & 20</title>
+</head>
+<body>
+<script>
+    const courses = [];
+    for (let i = 0; i < 5; i++) {
+        courses[i] = prompt("Input Your First Value");
+    }
+    alert(courses);
+    for (let i = 0; i < 5; i++) {
+        courses[i] = prompt(`Check and Confirm :  ${courses[i]}`, courses[i]);
+    }
+    alert(courses);
+</script>
+</body>
+</html>

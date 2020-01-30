@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 39 to 42</title>
+</head>
+<body>
+<script>
+
+    let marksObtained = 0;
+    for (let i = 0; i < 5; i++)
+        marksObtained += Number(prompt(`Please enter your course ${i + 1} marks`));
+
+    let totMarks = 500;
+
+    let percentage = ((marksObtained / totMarks) * 100).toFixed(2);
+    console.log(percentage);
+
+    let grade;
+
+    if (percentage >= 90 && percentage <= 100) grade = "A+";
+    else if (percentage >= 75 && percentage <= 89) grade = "A";
+    else if (percentage >= 60 && percentage <= 74) grade = "B";
+    else if (percentage >= 45 && percentage <= 59) grade = "C";
+    else if (percentage >= 30 && percentage <= 44) grade = "D";
+    else if (percentage >= 0 && percentage <= 29) grade = "F";
+    else grade = 'Invalid Marks';
+
+    grade === 'Invalid Marks' ? alert("Invalid Marks") : alert("Grade = " + grade);
+</script>
+</body>
+</html>

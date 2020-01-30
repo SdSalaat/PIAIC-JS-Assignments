@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 21 to 30 (1)</title>
+</head>
+<body>
+<script>
+    let userInput = Math.ceil(parseFloat(prompt("Enter a Decimal Point value.")));
+    let dummyText = "this is some dummy Text for test";
+
+    alert("Your entered number is now " + userInput );
+    alert("Dummy text " + dummyText );
+
+    let text = dummyText.slice(0,userInput);
+
+    text = text.split("");
+    let textRev = "";
+
+    for (let i = text.length - 1; i >= 0; i--) textRev +=  text[i];
+    alert(`"${text.join("")}"`);
+    alert(`"${textRev}"`);
+</script>
+</body>
+</html>

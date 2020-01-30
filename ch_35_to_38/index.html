@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 35 to 38 (1)</title>
+</head>
+<body>
+<script>
+    let userInput = prompt("Enter sentence to capitalize", "i love pakistan");
+    let splitUserInput = userInput.split(" ");
+    let sentence = "";
+    let space = " ";
+    for (let i = 0;  i< splitUserInput.length; i++)
+        sentence += splitUserInput[i].charAt(0).toUpperCase() + splitUserInput[i].slice(1).toLowerCase() + space;
+    console.log(sentence);
+
+</script>
+</body>
+</html>

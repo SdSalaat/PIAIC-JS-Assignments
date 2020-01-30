@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 1, 2 & 3</title>
+</head>
+<body>
+<script>
+    const firstVal = parseInt(prompt("Input Your First Value"));
+    const secondVal = parseInt(prompt("Input Your Second Value"));
+    const sign = prompt("Enter Calculation Sign");
+    if(sign === '+'){
+        alert(`${firstVal}${sign}${secondVal} = ${firstVal + secondVal}`)
+    }else if(sign === '-'){
+        alert(`${firstVal}${sign}${secondVal} = ${firstVal - secondVal}`)
+    }else if(sign === '*'){
+        alert(`${firstVal}${sign}${secondVal} = ${firstVal * secondVal}`)
+    }else if(sign === '/'){
+        alert(`${firstVal}${sign}${secondVal} = ${firstVal / secondVal}`)
+    }else if(sign === '%'){
+        alert(`${firstVal}${sign}${secondVal} = ${firstVal % secondVal}`)
+    }else {
+        alert("Invalid Character");
+    }
+</script>
+</body>
+</html>
